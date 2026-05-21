@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kari Kit</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+
+</div>
+
+    <!-- HEADER -->
+    <header>
+
+        <h1>Kari Kit 💙</h1>
+
+        <p>
+            Un super botiquín emocional para ayudarte
+            en momentos difíciles
+        </p>
+
+    </header>
+<!-- MODOS EMOCIONALES -->
+
+<section class="modos">
+
+    <h2>¿Cómo te sientes hoy? 💙</h2>
+
+    <div class="botones-modos">
+
+        <button onclick="cambiarModo('ansiedad')">
+            😰 Ansiedad
+        </button>
+
+        <button onclick="cambiarModo('tristeza')">
+            😔 Tristeza
+        </button>
+
+        <button onclick="cambiarModo('calma')">
+            💙 Calma
+        </button>
+
+        <button onclick="cambiarModo('motivacion')">
+            ✨ Motivación
+        </button>
+
+    </div>
+
+</section>
+    <!-- INTRO -->
+
+    <section class="intro">
+
+        <h2>¿Qué es Kari Kit?</h2>
+
+        <p>
+            Kari Kit ayuda en momentos de ansiedad,
+            tristeza, angustia o soledad mediante
+            herramientas emocionales que brindan calma.
+        </p>
+
+    </section>
+
+    <!-- TARJETAS -->
+
+    <section class="materiales">
+
+        <!-- MENTAS -->
+
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?q=80&w=1000&auto=format&fit=crop">
+
+            <h2>Mentas</h2>
+
+            <p>
+                El sabor fuerte y el olor ayudan
+                a enfocarte en el presente.
+            </p>
+
+        </div>
+
+        <!-- AUDIFONOS -->
+
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=1000&auto=format&fit=crop">
+
+            <h2>Audífonos</h2>
+
+            <p>
+                Ayudan a escuchar música relajante
+                y sonidos tranquilos.
+            </p>
+
+        </div>
+
+        <!-- TOALLAS -->
+
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1596755389378-c31d21fd1273?q=80&w=1000&auto=format&fit=crop">
+
+            <h2>Toallas</h2>
+
+            <p>
+                Una toalla suave brinda
+                comodidad y seguridad.
+            </p>
+
+        </div>
+
+        <!-- PELOTA -->
+
+        <div class="card">
+
+            <img src="./imagenes_audios_videos/pelota.jpeg">
+
+            <h2>Pelota Antiestrés</h2>
+
+            <p>
+                Ayuda a liberar tensión física,
+                controlar nerviosismo y relajarse
+                apretando la pelota con las manos.
+            </p>
+
+        </div>
+
+        <!-- TARJETAS -->
+
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=1000&auto=format&fit=crop">
+
+            <h2>Tarjetas</h2>
+
+            <p>
+                Contienen frases positivas
+                y ejercicios emocionales.
+            </p>
+
+        </div>
+
+        <!-- JUGUETE -->
+
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1589254065909-b7086229d08c?q=80&w=1000&auto=format&fit=crop">
+
+            <h2>Juguete Antiestrés</h2>
+
+            <p>
+                Ayuda a distraer la mente
+                y reducir ansiedad.
+            </p>
+
+        </div>
+
+        <!-- FOTO -->
+
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?q=80&w=1000&auto=format&fit=crop">
+
+            <h2>Foto</h2>
+
+            <p>
+                Recordar personas queridas
+                genera apoyo emocional.
+            </p>
+
+        </div>
+
+        <!-- VIRGEN -->
+
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1507692049790-de58290a4334?q=80&w=1000&auto=format&fit=crop">
+
+            <h2>Imagen de la Virgen María</h2>
+
+            <p>
+                Puede transmitir paz,
+                esperanza y tranquilidad espiritual.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- MUSICA -->
+
+  <!-- SONIDOS RELAJANTES -->
+
+<section class="music">
+
+    <h2>Sonidos Relajantes 🌙</h2>
+
+    <p>
+        Escucha sonidos tranquilos para relajarte.
+    </p>
+
+    <div class="botones-sonido">
+
+        <button onclick="cambiarSonido('lluvia')">
+            🌧️ Lluvia
+        </button>
+
+        <button onclick="cambiarSonido('mar')">
+            🌊 Mar
+        </button>
+
+        <button onclick="cambiarSonido('bosque')">
+            🌲 Bosque
+        </button>
+
+    </div>
+
+    <iframe
+        id="player"
+        width="80%"
+        height="400"
+        src="https://www.youtube.com/embed/lFcSrYw-ARY"
+        title="Sonidos relajantes"
+        frameborder="0"
+        allowfullscreen>
+    </iframe>
+
+</section>
+<!-- FRASES DINAMICAS -->
+
+<section class="frases">
+
+    <h2>Un mensaje para ti 💙</h2>
+
+    <div class="frase-box">
+
+        <p id="frase">
+            Todo lo que sientes ahora es temporal.
+        </p>
+
+        <button onclick="cambiarFrase()">
+            Ver otra frase ✨
+        </button>
+
+    </div>
+
+</section>
+<!-- RESPIRACION -->
+
+<section class="respiracion">
+
+    <h2>Respira conmigo 🌬️</h2>
+
+    <p id="texto-respiracion">
+        Inhala...
+    </p>
+
+    <div class="circulo"></div>
+
+</section>
+<!-- CHATBOT -->
+
+<section class="chatbot">
+
+    <h2>Chat de apoyo emocional 💙</h2>
+
+    <div class="chat-box" id="chat-box">
+
+        <div class="mensaje bot">
+            Hola 💙 ¿Cómo te sientes hoy?
+        </div>
+
+    </div>
+
+    <div class="input-area">
+
+        <input 
+            type="text"
+            id="user-input"
+            placeholder="Escribe aquí..."
+        >
+
+        <button onclick="enviarMensaje()">
+            Enviar
+        </button>
+
+    </div>
+
+</section>
+<footer>
+
+    <p>Kari Kit © 2026</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

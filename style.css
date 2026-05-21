@@ -1,0 +1,461 @@
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#dfeaf5;
+}
+
+/* HEADER */
+
+header{
+    background:#74a7eb;
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+}
+
+header h1{
+    font-size:55px;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:20px;
+}
+
+/* INTRO */
+
+.intro{
+    text-align:center;
+    padding:50px 20px;
+}
+
+.intro h2{
+    color:#4d84c4;
+    font-size:35px;
+}
+
+.intro p{
+    max-width:800px;
+    margin:auto;
+    font-size:20px;
+    line-height:1.6;
+}
+
+/* TARJETAS */
+
+.materiales{
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+    padding:40px;
+}
+
+/* CARD */
+
+.card{
+    background:white;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0px 5px 15px rgba(0,0,0,0.1);
+
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+/* IMAGENES */
+
+.card img{
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+    display:block;
+}
+
+/* TITULOS */
+
+.card h2{
+    text-align:center;
+
+    color:#4d84c4;
+
+    font-size:28px;
+
+    margin-top:20px;
+}
+
+/* TEXTO */
+
+.card p{
+    text-align:center;
+
+    padding:20px;
+
+    line-height:1.5;
+
+    font-size:18px;
+}
+
+/* MUSICA */
+
+.music{
+    text-align:center;
+
+    padding:60px 20px;
+}
+
+.music h2{
+    color:#4d84c4;
+
+    font-size:35px;
+}
+
+.music iframe{
+    border-radius:20px;
+    margin-top:20px;
+}
+
+/* FRASES */
+
+.frases{
+    text-align:center;
+
+    padding:70px 20px;
+}
+
+.frases h2{
+    color:#4d84c4;
+
+    font-size:38px;
+
+    margin-bottom:30px;
+}
+
+.frase-box{
+    background:white;
+
+    max-width:700px;
+
+    margin:auto;
+
+    padding:40px;
+
+    border-radius:25px;
+
+    box-shadow:0px 5px 15px rgba(0,0,0,0.1);
+}
+
+#frase{
+    font-size:28px;
+
+    color:#555;
+
+    margin-bottom:30px;
+
+    line-height:1.5;
+}
+
+/* BOTON */
+
+button{
+    background:#74a7eb;
+
+    color:white;
+
+    border:none;
+
+    padding:15px 30px;
+
+    font-size:18px;
+
+    border-radius:15px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+button:hover{
+    background:#4d84c4;
+
+    transform:scale(1.05);
+}
+
+/* FOOTER */
+
+footer{
+    background:#74a7eb;
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+
+    margin-top:40px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    header h1{
+        font-size:40px;
+    }
+
+    .intro p{
+        font-size:18px;
+    }
+
+}
+/* RESPIRACION */
+
+.respiracion{
+    text-align:center;
+
+    padding:80px 20px;
+}
+
+.respiracion h2{
+    color:#4d84c4;
+
+    font-size:40px;
+
+    margin-bottom:20px;
+}
+
+#texto-respiracion{
+    font-size:30px;
+
+    color:#555;
+
+    margin-bottom:40px;
+}
+
+/* CIRCULO */
+
+.circulo{
+
+    width:180px;
+    height:180px;
+
+    background:#74a7eb;
+
+    border-radius:50%;
+
+    margin:auto;
+
+    animation:
+    respirar 8s infinite;
+
+}
+
+/* ANIMACION */
+
+@keyframes respirar{
+
+    0%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.5);
+    }
+
+    100%{
+        transform:scale(1);
+    }
+
+}
+/* BOTONES DE SONIDO */
+
+.botones-sonido{
+
+    margin-bottom:30px;
+}
+
+.botones-sonido button{
+
+    margin:10px;
+}
+/* ANIMACION TARJETAS */
+
+.card{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    animation:aparecer 1s forwards;
+}
+
+/* RETRASOS */
+
+.card:nth-child(1){
+    animation-delay:0.2s;
+}
+
+.card:nth-child(2){
+    animation-delay:0.4s;
+}
+
+.card:nth-child(3){
+    animation-delay:0.6s;
+}
+
+.card:nth-child(4){
+    animation-delay:0.8s;
+}
+
+.card:nth-child(5){
+    animation-delay:1s;
+}
+
+.card:nth-child(6){
+    animation-delay:1.2s;
+}
+
+.card:nth-child(7){
+    animation-delay:1.4s;
+}
+
+.card:nth-child(8){
+    animation-delay:1.6s;
+}
+
+/* KEYFRAMES */
+
+@keyframes aparecer{
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+/* MODOS */
+
+.modos{
+
+    text-align:center;
+
+    padding:40px 20px;
+}
+
+.modos h2{
+
+    color:#4d84c4;
+
+    font-size:35px;
+
+    margin-bottom:30px;
+}
+
+.botones-modos button{
+
+    margin:10px;
+}
+/* CHATBOT */
+
+.chatbot{
+
+    padding:60px 20px;
+
+    text-align:center;
+}
+
+.chatbot h2{
+
+    color:#4d84c4;
+
+    font-size:35px;
+
+    margin-bottom:30px;
+}
+
+/* CAJA */
+
+.chat-box{
+
+    background:white;
+
+    max-width:700px;
+
+    height:400px;
+
+    margin:auto;
+
+    padding:20px;
+
+    border-radius:20px;
+
+    overflow-y:auto;
+
+    box-shadow:0px 5px 15px rgba(0,0,0,0.1);
+
+    text-align:left;
+}
+
+/* MENSAJES */
+
+.mensaje{
+
+    padding:15px;
+
+    margin:10px 0;
+
+    border-radius:15px;
+
+    max-width:80%;
+}
+
+.bot{
+
+    background:#dbeeff;
+}
+
+.user{
+
+    background:#74a7eb;
+
+    color:white;
+
+    margin-left:auto;
+}
+
+/* INPUT */
+
+.input-area{
+
+    margin-top:20px;
+}
+
+.input-area input{
+
+    width:60%;
+
+    padding:15px;
+
+    border-radius:15px;
+
+    border:1px solid #ccc;
+
+    font-size:16px;
+}
+
+.input-area button{
+
+    margin-left:10px;
+}
